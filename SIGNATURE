@@ -1,0 +1,57 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.73.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 fe3338dc6a65f2e9cdd88fedb933d75996804cdb Build.PL
+SHA1 a0752e2e37ed4eb0ef9bc96c13d0f5d0ac8d859f Changes
+SHA1 11f320a116d3bfd435111e10e4224fd5d77e7adf LICENSE
+SHA1 68bc808ad647a060ea1118852de94c19ded7ad0f MANIFEST
+SHA1 0ce21922fddb5fdc3347e9563e79360c5839f325 MANIFEST.SKIP
+SHA1 73765786c25674a88e1fa1a41814d7d6a3d9130b META.json
+SHA1 b296c74025b19631b22ba38039873e09b75f1dd0 META.yml
+SHA1 1cce579ebffa9bd7942c9df5d70af13cae0864c1 Makefile.PL
+SHA1 cde0c7d53b3333d482203d162911a3c625a0e4a6 README.pod
+SHA1 63672e23d743ceebbb1ca7cfb7e33dadf448d40a TESTING
+SHA1 24c7271c89e0ed068e57944246d55fd0f15278ce VERSIONING
+SHA1 9ad230e23f71c6af604ab484a3c591ecbd73664a lib/Config/Apple/Profile.pm
+SHA1 e0e7750a91cc007053b18bfefce696e8cfff9367 lib/Config/Apple/Profile/Payload/Certificate.pm
+SHA1 386bfab684942fdbb5b13b53da6e8fcfc205ab27 lib/Config/Apple/Profile/Payload/Certificate/PEM.pm
+SHA1 cbc22ba4fa35f76a9e16e2d30d28a4420f740bd6 lib/Config/Apple/Profile/Payload/Certificate/PKCS1.pm
+SHA1 503f08281bd5177845f009ff3713d290921dd9d0 lib/Config/Apple/Profile/Payload/Certificate/PKCS12.pm
+SHA1 7fe93080feb8a840adf979f4a0c39f5f58d385bb lib/Config/Apple/Profile/Payload/Certificate/Root.pm
+SHA1 54503c55c7dc4beb4b655b35b1d8f47548651ac5 lib/Config/Apple/Profile/Payload/Common.pm
+SHA1 e1ac05d8cd562ee6e6f99c053c4cd4f292262aea lib/Config/Apple/Profile/Payload/Email.pm
+SHA1 e3da52beabd262591ff8acfcf8611a4fa1e7378a lib/Config/Apple/Profile/Payload/Tie/Array.pm
+SHA1 ddec025c7ed2c14403b92c0e9122be002ad03695 lib/Config/Apple/Profile/Payload/Tie/Root.pm
+SHA1 fad560f0340f166679c57084496d05614a5a4bd3 lib/Config/Apple/Profile/Payload/Types.pm
+SHA1 21b719ec28f88b0501b2a0c2eea111282f805fb4 lib/Config/Apple/Profile/Payload/Types/Serialize.pm
+SHA1 fb5c0c399559400b7cd0d2ea016c38fcbaf0dbef lib/Config/Apple/Profile/Payload/Types/Validation.pm
+SHA1 c8d59bd9cd695b371c76600583d07665e6667cc2 lib/Config/Apple/Profile/Targets.pm
+SHA1 cec195ddf7a6b6c238ce53ff0f73a3b9a4da33e7 t/00-manifest.t
+SHA1 166ffa50263884ee55d5f510c49e6405ee187937 t/01-load.t
+SHA1 78579ce0720fb05beb57a5b2b977e4970538c15a t/08-pod.t
+SHA1 a3526c0cabf1c6180f49d9b8bc26950f455abea5 t/09-pod-coverage.t
+SHA1 41c50dece8fd6d599e7866ab0006ccff2d04d417 t/10-string.t
+SHA1 6d2f6a9fbc5c0b11d3cc2121c41cfe7d1b9be25b t/11-number.t
+SHA1 6896d41a46b49943f5df269e2e636e85ab10b4b6 t/13-real.t
+SHA1 4e852a0062148ab839dcccbfa73f8b59d78e03db t/15-array.t
+SHA1 6720d1938563e817cb828abbd85c8dbac82ee5f5 t/17-uuid.t
+SHA1 d809faa31916c1e0d20103d3b04c822b46d7473d t/37-Email.t
+-----BEGIN PGP SIGNATURE-----
+
+iD8DBQFUGJbUKktx/CQzhy4RAs0OAKCYSDl4s4cO3hfnPoT8++HrwGze5QCeLcHa
+/s3UMH7KlG/NB8NYqs9mS+Q=
+=A5pG
+-----END PGP SIGNATURE-----

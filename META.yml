@@ -1,0 +1,79 @@
+---
+abstract: 'An OO interface to Apple Configuration Profiles.'
+author:
+  - 'A. Karl Kornel <karl@kornel.us>'
+build_requires:
+  Module::Signature: '0'
+  Test::Exception: '0'
+  Test::More: '0'
+configure_requires:
+  Module::Build: '0.4210'
+dynamic_config: 0
+generated_by: 'Module::Build version 0.421, CPAN::Meta::Converter version 2.142060'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: Config-Apple-Profile
+provides:
+  Config::Apple::Profile:
+    file: lib/Config/Apple/Profile.pm
+    version: '0.55'
+  Config::Apple::Profile::Payload::Certificate:
+    file: lib/Config/Apple/Profile/Payload/Certificate.pm
+    version: '0.55'
+  Config::Apple::Profile::Payload::Certificate::PEM:
+    file: lib/Config/Apple/Profile/Payload/Certificate/PEM.pm
+    version: '0.55'
+  Config::Apple::Profile::Payload::Certificate::PKCS1:
+    file: lib/Config/Apple/Profile/Payload/Certificate/PKCS1.pm
+    version: '0.55'
+  Config::Apple::Profile::Payload::Certificate::PKCS12:
+    file: lib/Config/Apple/Profile/Payload/Certificate/PKCS12.pm
+    version: '0.55'
+  Config::Apple::Profile::Payload::Certificate::Root:
+    file: lib/Config/Apple/Profile/Payload/Certificate/Root.pm
+    version: '0.55'
+  Config::Apple::Profile::Payload::Common:
+    file: lib/Config/Apple/Profile/Payload/Common.pm
+    version: '0.55'
+  Config::Apple::Profile::Payload::Email:
+    file: lib/Config/Apple/Profile/Payload/Email.pm
+    version: '0.55'
+  Config::Apple::Profile::Payload::Tie::Array:
+    file: lib/Config/Apple/Profile/Payload/Tie/Array.pm
+    version: '0.55'
+  Config::Apple::Profile::Payload::Tie::Root:
+    file: lib/Config/Apple/Profile/Payload/Tie/Root.pm
+    version: '0.55'
+  Config::Apple::Profile::Payload::Types:
+    file: lib/Config/Apple/Profile/Payload/Types.pm
+    version: '0.55'
+  Config::Apple::Profile::Payload::Types::Serialize:
+    file: lib/Config/Apple/Profile/Payload/Types/Serialize.pm
+    version: '0.55'
+  Config::Apple::Profile::Payload::Types::Validation:
+    file: lib/Config/Apple/Profile/Payload/Types/Validation.pm
+    version: '0.55'
+  Config::Apple::Profile::Targets:
+    file: lib/Config/Apple/Profile/Targets.pm
+    version: '0.55'
+requires:
+  Data::GUID: '0'
+  DateTime: '0'
+  DateTime::Format::Flexible: '0'
+  Email::Valid: '0'
+  Exporter::Easy: '0'
+  File::Temp: '0'
+  IO::Dir: '0'
+  IO::File: '0'
+  Mac::PropertyList: '1.4'
+  Readonly: '0'
+  Regexp::Common: '0'
+  Scalar::Util: '0'
+  Try::Tiny: '0'
+resources:
+  bugtracker: https://github.com/akkornel/Config-Apple-Profile/issues
+  license: http://dev.perl.org/licenses/
+  repository: https://github.com/akkornel/Config-Apple-Profile
+version: '0.55'

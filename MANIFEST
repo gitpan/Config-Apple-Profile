@@ -1,0 +1,36 @@
+Build.PL
+Changes
+lib/Config/Apple/Profile.pm
+lib/Config/Apple/Profile/Payload/Certificate.pm
+lib/Config/Apple/Profile/Payload/Certificate/PEM.pm
+lib/Config/Apple/Profile/Payload/Certificate/PKCS1.pm
+lib/Config/Apple/Profile/Payload/Certificate/PKCS12.pm
+lib/Config/Apple/Profile/Payload/Certificate/Root.pm
+lib/Config/Apple/Profile/Payload/Common.pm
+lib/Config/Apple/Profile/Payload/Email.pm
+lib/Config/Apple/Profile/Payload/Tie/Array.pm
+lib/Config/Apple/Profile/Payload/Tie/Root.pm
+lib/Config/Apple/Profile/Payload/Types.pm
+lib/Config/Apple/Profile/Payload/Types/Serialize.pm
+lib/Config/Apple/Profile/Payload/Types/Validation.pm
+lib/Config/Apple/Profile/Targets.pm
+LICENSE
+Makefile.PL
+MANIFEST			This list of files
+MANIFEST.SKIP
+META.json
+META.yml
+README.pod
+t/00-manifest.t
+t/01-load.t
+t/08-pod.t
+t/09-pod-coverage.t
+t/10-string.t
+t/11-number.t
+t/13-real.t
+t/15-array.t
+t/17-uuid.t
+t/37-Email.t
+TESTING
+VERSIONING
+SIGNATURE    Added here by Module::Build

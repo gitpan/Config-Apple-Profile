@@ -10,7 +10,7 @@
 # 
 # See http://dev.perl.org/licenses/ for more information.
 
-use 5.14.4;
+use 5.10.1;
 use strict;
 use warnings FATAL => 'all';
 use Test::More;
@@ -19,9 +19,11 @@ use Test::More;
 BEGIN {
     my @modules = qw(
         Config::Apple::Profile
+        Config::Apple::Profile::Config
         Config::Apple::Profile::Targets
         Config::Apple::Profile::Payload::Common
         Config::Apple::Profile::Payload::Tie::Array
+        Config::Apple::Profile::Payload::Tie::Dict
         Config::Apple::Profile::Payload::Tie::Root
         Config::Apple::Profile::Payload::Types
         Config::Apple::Profile::Payload::Types::Serialize
@@ -32,6 +34,9 @@ BEGIN {
         Config::Apple::Profile::Payload::Certificate::PKCS12
         Config::Apple::Profile::Payload::Certificate::Root
         Config::Apple::Profile::Payload::Email
+        Config::Apple::Profile::Payload::Font
+        Config::Apple::Profile::Payload::WiFi
+        Config::Apple::Profile::Payload::WiFi::EAPClientConfiguration
     );
 
     plan tests => scalar(@modules);

@@ -3,11 +3,11 @@
 
 package Config::Apple::Profile::Payload::Types::Serialize;
 
-use 5.14.4;
+use 5.10.1;
 use strict;
 use warnings FATAL => 'all';
 
-our $VERSION = '0.55';
+our $VERSION = '0.87';
 
 use DateTime;
 use Encode qw(encode);
@@ -132,7 +132,7 @@ sub serialize {
         $value = Mac::PropertyList::array->new(\@array);
     }
     
-    # For hashed, make a Perl hash of fragments, then plist that
+    # For dictionaries, make a Perl hash of fragments, then plist that
     elsif ($type == $ProfileDict) {
         my %hash;
         

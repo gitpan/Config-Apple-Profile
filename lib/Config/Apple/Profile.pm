@@ -1,6 +1,6 @@
 package Config::Apple::Profile;
 
-use 5.14.4;
+use 5.10.1;
 use strict;
 use warnings FATAL => 'all';
 use base qw(Config::Apple::Profile::Payload::Common);
@@ -12,7 +12,7 @@ use Config::Apple::Profile::Payload::Common;
 use Config::Apple::Profile::Payload::Types qw(:all);
 use Config::Apple::Profile::Targets qw(:all);
 
-our $VERSION = '0.55';
+our $VERSION = '0.87';
 
 
 =encoding utf8

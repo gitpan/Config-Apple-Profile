@@ -16,6 +16,7 @@
    "prereqs" : {
       "build" : {
          "requires" : {
+            "DateTime::Infinite" : "0",
             "Module::Signature" : "0",
             "Test::Exception" : "0",
             "Test::More" : "0"
@@ -47,62 +48,78 @@
    "provides" : {
       "Config::Apple::Profile" : {
          "file" : "lib/Config/Apple/Profile.pm",
-         "version" : "0.55"
+         "version" : "0.87"
       },
       "Config::Apple::Profile::Payload::Certificate" : {
          "file" : "lib/Config/Apple/Profile/Payload/Certificate.pm",
-         "version" : "0.55"
+         "version" : "0.87"
       },
       "Config::Apple::Profile::Payload::Certificate::PEM" : {
          "file" : "lib/Config/Apple/Profile/Payload/Certificate/PEM.pm",
-         "version" : "0.55"
+         "version" : "0.87"
       },
       "Config::Apple::Profile::Payload::Certificate::PKCS1" : {
          "file" : "lib/Config/Apple/Profile/Payload/Certificate/PKCS1.pm",
-         "version" : "0.55"
+         "version" : "0.87"
       },
       "Config::Apple::Profile::Payload::Certificate::PKCS12" : {
          "file" : "lib/Config/Apple/Profile/Payload/Certificate/PKCS12.pm",
-         "version" : "0.55"
+         "version" : "0.87"
       },
       "Config::Apple::Profile::Payload::Certificate::Root" : {
          "file" : "lib/Config/Apple/Profile/Payload/Certificate/Root.pm",
-         "version" : "0.55"
+         "version" : "0.87"
       },
       "Config::Apple::Profile::Payload::Common" : {
          "file" : "lib/Config/Apple/Profile/Payload/Common.pm",
-         "version" : "0.55"
+         "version" : "0.87"
       },
       "Config::Apple::Profile::Payload::Email" : {
          "file" : "lib/Config/Apple/Profile/Payload/Email.pm",
-         "version" : "0.55"
+         "version" : "0.87"
+      },
+      "Config::Apple::Profile::Payload::Font" : {
+         "file" : "lib/Config/Apple/Profile/Payload/Font.pm",
+         "version" : "0.87"
       },
       "Config::Apple::Profile::Payload::Tie::Array" : {
          "file" : "lib/Config/Apple/Profile/Payload/Tie/Array.pm",
-         "version" : "0.55"
+         "version" : "0.87"
+      },
+      "Config::Apple::Profile::Payload::Tie::Dict" : {
+         "file" : "lib/Config/Apple/Profile/Payload/Tie/Dict.pm",
+         "version" : "0.87"
       },
       "Config::Apple::Profile::Payload::Tie::Root" : {
          "file" : "lib/Config/Apple/Profile/Payload/Tie/Root.pm",
-         "version" : "0.55"
+         "version" : "0.87"
       },
       "Config::Apple::Profile::Payload::Types" : {
          "file" : "lib/Config/Apple/Profile/Payload/Types.pm",
-         "version" : "0.55"
+         "version" : "0.87"
       },
       "Config::Apple::Profile::Payload::Types::Serialize" : {
          "file" : "lib/Config/Apple/Profile/Payload/Types/Serialize.pm",
-         "version" : "0.55"
+         "version" : "0.87"
       },
       "Config::Apple::Profile::Payload::Types::Validation" : {
          "file" : "lib/Config/Apple/Profile/Payload/Types/Validation.pm",
-         "version" : "0.55"
+         "version" : "0.87"
+      },
+      "Config::Apple::Profile::Payload::WiFi" : {
+         "file" : "lib/Config/Apple/Profile/Payload/WiFi.pm",
+         "version" : "0.87"
+      },
+      "Config::Apple::Profile::Payload::WiFi::EAPClientConfiguration" : {
+         "file" : "lib/Config/Apple/Profile/Payload/WiFi/EAPClientConfiguration.pm",
+         "version" : "0.87"
       },
       "Config::Apple::Profile::Targets" : {
          "file" : "lib/Config/Apple/Profile/Targets.pm",
-         "version" : "0.55"
+         "version" : "0.87"
       }
    },
-   "release_status" : "unstable",
+   "release_status" : "testing",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/akkornel/Config-Apple-Profile/issues"
@@ -114,5 +131,5 @@
          "url" : "https://github.com/akkornel/Config-Apple-Profile"
       }
    },
-   "version" : "0.55"
+   "version" : "0.87"
 }

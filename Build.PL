@@ -10,7 +10,7 @@
 # 
 # See http://dev.perl.org/licenses/ for more information.
 
-use 5.14.4;
+use 5.10.1;
 use strict;
 use warnings FATAL => 'all';
 
@@ -22,11 +22,11 @@ my $builder = Module::Build->new(
     dist_author         => q{A. Karl Kornel <karl@kornel.us>},
     keywords            => [qw(iOS mobileconfig plist)],
     dist_version_from   => 'lib/Config/Apple/Profile.pm',
-    release_status      => 'unstable',
+    release_status      => 'testing',
     
     # Software license
     license             => 'perl',
-    create_license      => 1,
+    create_license      => 0,
         
     # Our prerequisites
     dynamic_config     => 0,
@@ -34,6 +34,7 @@ my $builder = Module::Build->new(
         'Module::Build'          => '0.4210',
     },
     build_requires => {
+        'DateTime::Infinite'     => 0,
         'Test::Exception'        => 0,
         'Test::More'             => 0,
         'Module::Signature'      => 0,
@@ -74,6 +75,22 @@ my $builder = Module::Build->new(
     add_to_cleanup     => [ 'Config-Apple-Profile-*' ],
     create_makefile_pl => 'traditional',
     sign                => 1,
+    
+    # Additional executables and modules
+    get_options => {
+        'skip-openssl' => {
+            default => 0,
+        },
+        'with-openssl' => {
+            type => '=s',
+        },
+    },
+    
+    # 
+    PL_files => {
+        'lib/Config/Apple/Profile/Config.pl'
+        => 'lib/Config/Apple/Profile/Config.pm',
+    }
 );
 
 # Let Mobule::Build take things from here!

@@ -2,7 +2,9 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-  'PL_FILES' => {},
+  'PL_FILES' => {
+                  'lib/Config/Apple/Profile/Config.pl' => 'lib/Config/Apple/Profile/Config.pm'
+                },
   'INSTALLDIRS' => 'site',
   'NAME' => 'Config::Apple::Profile',
   'EXE_FILES' => [],
@@ -18,6 +20,7 @@ WriteMakefile
                    'Try::Tiny' => 0,
                    'Test::Exception' => 0,
                    'IO::File' => 0,
+                   'DateTime::Infinite' => 0,
                    'Readonly' => 0,
                    'Test::More' => 0,
                    'Mac::PropertyList' => '1.4',

@@ -15,7 +15,7 @@ Development releases will have the standard "_AAA" version added to the end.
         Basic Types
 √ 5 points  Create common profile types and targets
 √ 5 points  Create Array type
-  5 points  Create Dictionary type
+√ 5 points  Create Dictionary type
   
         Basic Functionality
 √20 points  Create root class for payloads
@@ -26,10 +26,11 @@ Development releases will have the standard "_AAA" version added to the end.
         Import/Export
 √ 5 points  Create root Profile object
  20 points  Importing existing profiles
+  5 points  Tested Compatibility with Storable 
 
         Crypto
- 10 points  OpenSSL executable detection & qualification
-  5 points  Cert validation
+√10 points  OpenSSL executable detection & qualification
+√ 5 points  Cert validation
  10 points  Profile encryption
  10 points  Profile signing
 
@@ -47,7 +48,7 @@ Development releases will have the standard "_AAA" version added to the end.
 √ 5 points  Email implementation & test suite
   5 points  Exchange implementation & test suite
   2 points  FileVault 2 implementation & test suite
-  2 points  Font implementation & test suite
+√ 2 points  Font implementation & test suite
   2 points  Global HTTP Proxy implementation & test suite
   2 points  Identification implementation & test suite
   5 points  LDAP implementation & test suite
@@ -64,4 +65,4 @@ Development releases will have the standard "_AAA" version added to the end.
   2 points  App-to-Per-App VPN Mapping implementation & test suite
   2 points  Web Clip implementation & test suite
   2 points  Web Content Filter implementation & test suite
- 10 points  Wi-Fi implementation & test suite
+√10 points  Wi-Fi implementation & test suite

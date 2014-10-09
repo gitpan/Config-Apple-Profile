@@ -3,12 +3,12 @@
 
 package Config::Apple::Profile::Payload::Certificate::PKCS12;
 
-use 5.14.4;
+use 5.10.1;
 use strict;
 use warnings FATAL => 'all';
 use base qw(Config::Apple::Profile::Payload::Certificate);
 
-our $VERSION = '0.55';
+our $VERSION = '0.87';
 
 use Readonly;
 use Config::Apple::Profile::Targets qw(:all);
@@ -68,6 +68,10 @@ This payload has the following additional keys:
 This is the password needed to decrypt the PKCS#12 file.  If no password is
 provided, the user will be prompted to enter the password when installing the
 profile.
+
+B<WARNING:> iOS 7 and 8 seem to have problems with identity certificates that do
+not have the C<Password> key in the payload.  More information, and status,
+are in L<https://github.com/akkornel/Config-Apple-Profile/issues/7>.
 
 =head2 C<PayloadType>
 

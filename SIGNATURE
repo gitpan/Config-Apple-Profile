@@ -14,44 +14,65 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 fe3338dc6a65f2e9cdd88fedb933d75996804cdb Build.PL
-SHA1 a0752e2e37ed4eb0ef9bc96c13d0f5d0ac8d859f Changes
-SHA1 11f320a116d3bfd435111e10e4224fd5d77e7adf LICENSE
-SHA1 68bc808ad647a060ea1118852de94c19ded7ad0f MANIFEST
-SHA1 0ce21922fddb5fdc3347e9563e79360c5839f325 MANIFEST.SKIP
-SHA1 73765786c25674a88e1fa1a41814d7d6a3d9130b META.json
-SHA1 b296c74025b19631b22ba38039873e09b75f1dd0 META.yml
-SHA1 1cce579ebffa9bd7942c9df5d70af13cae0864c1 Makefile.PL
-SHA1 cde0c7d53b3333d482203d162911a3c625a0e4a6 README.pod
-SHA1 63672e23d743ceebbb1ca7cfb7e33dadf448d40a TESTING
-SHA1 24c7271c89e0ed068e57944246d55fd0f15278ce VERSIONING
-SHA1 9ad230e23f71c6af604ab484a3c591ecbd73664a lib/Config/Apple/Profile.pm
-SHA1 e0e7750a91cc007053b18bfefce696e8cfff9367 lib/Config/Apple/Profile/Payload/Certificate.pm
-SHA1 386bfab684942fdbb5b13b53da6e8fcfc205ab27 lib/Config/Apple/Profile/Payload/Certificate/PEM.pm
-SHA1 cbc22ba4fa35f76a9e16e2d30d28a4420f740bd6 lib/Config/Apple/Profile/Payload/Certificate/PKCS1.pm
-SHA1 503f08281bd5177845f009ff3713d290921dd9d0 lib/Config/Apple/Profile/Payload/Certificate/PKCS12.pm
-SHA1 7fe93080feb8a840adf979f4a0c39f5f58d385bb lib/Config/Apple/Profile/Payload/Certificate/Root.pm
-SHA1 54503c55c7dc4beb4b655b35b1d8f47548651ac5 lib/Config/Apple/Profile/Payload/Common.pm
-SHA1 e1ac05d8cd562ee6e6f99c053c4cd4f292262aea lib/Config/Apple/Profile/Payload/Email.pm
-SHA1 e3da52beabd262591ff8acfcf8611a4fa1e7378a lib/Config/Apple/Profile/Payload/Tie/Array.pm
-SHA1 ddec025c7ed2c14403b92c0e9122be002ad03695 lib/Config/Apple/Profile/Payload/Tie/Root.pm
-SHA1 fad560f0340f166679c57084496d05614a5a4bd3 lib/Config/Apple/Profile/Payload/Types.pm
-SHA1 21b719ec28f88b0501b2a0c2eea111282f805fb4 lib/Config/Apple/Profile/Payload/Types/Serialize.pm
-SHA1 fb5c0c399559400b7cd0d2ea016c38fcbaf0dbef lib/Config/Apple/Profile/Payload/Types/Validation.pm
-SHA1 c8d59bd9cd695b371c76600583d07665e6667cc2 lib/Config/Apple/Profile/Targets.pm
-SHA1 cec195ddf7a6b6c238ce53ff0f73a3b9a4da33e7 t/00-manifest.t
-SHA1 166ffa50263884ee55d5f510c49e6405ee187937 t/01-load.t
-SHA1 78579ce0720fb05beb57a5b2b977e4970538c15a t/08-pod.t
-SHA1 a3526c0cabf1c6180f49d9b8bc26950f455abea5 t/09-pod-coverage.t
-SHA1 41c50dece8fd6d599e7866ab0006ccff2d04d417 t/10-string.t
-SHA1 6d2f6a9fbc5c0b11d3cc2121c41cfe7d1b9be25b t/11-number.t
-SHA1 6896d41a46b49943f5df269e2e636e85ab10b4b6 t/13-real.t
-SHA1 4e852a0062148ab839dcccbfa73f8b59d78e03db t/15-array.t
-SHA1 6720d1938563e817cb828abbd85c8dbac82ee5f5 t/17-uuid.t
-SHA1 d809faa31916c1e0d20103d3b04c822b46d7473d t/37-Email.t
+SHA1 e765b850d2c578eae4ec42dc9eabdb9fc6b3d647 Build.PL
+SHA1 d1e021734f275a0a00bc85b5da205179dc88e4bc Changes
+SHA1 5906d8036fa3b734581819bb2d38bc4518c2be6f LICENSE
+SHA1 a2b36930b67fd394050b6d16f4fc1a5efe416524 MANIFEST
+SHA1 3f030aa0b433ef3008a3dc069cf42dee3e7c3b9d MANIFEST.SKIP
+SHA1 a66339bbd700ce24c2056f508cfe5910fae3c157 META.json
+SHA1 dccb50b533fa312ae254ed339e15f26731594da4 META.yml
+SHA1 5aba184508ba69deb4b5e3155a92b701a826a98f Makefile.PL
+SHA1 a6e96788c72e9ae75b4f8ca9d205b3e8d9c35588 README.pod
+SHA1 4c2a7b6f64eec728ee58a46850de367e340e52e0 SIL Open Font License.txt
+SHA1 ed5cef9e08ee9f7c16ee26d3fb8395642983bcce TESTING
+SHA1 b90ccd91669802c1c6cac8aabd45169529b41424 VERSIONING
+SHA1 491c29dbbb9f3a9e279aadce1384ad24041d5318 lib/Config/Apple/Profile.pm
+SHA1 c73f1e2bfd06761ed1bb509217da36a6b0ae1012 lib/Config/Apple/Profile/Config.pl
+SHA1 5f407a66aaf5b07498e22c9fbea7bc957b44e80f lib/Config/Apple/Profile/Payload/Certificate.pm
+SHA1 c0380bff088c7848d1179abc359c7e8c7aa3e7ce lib/Config/Apple/Profile/Payload/Certificate/PEM.pm
+SHA1 d9575efa6a9a95caf6c92b86f1bd1a699adddcf5 lib/Config/Apple/Profile/Payload/Certificate/PKCS1.pm
+SHA1 e4a133ee1ca59daac9abd4ab1306148dec63a29e lib/Config/Apple/Profile/Payload/Certificate/PKCS12.pm
+SHA1 f6c7a85808bc310fdfa969980c98d2b8a2bdb71a lib/Config/Apple/Profile/Payload/Certificate/Root.pm
+SHA1 b1747adc30c6c41bb1c0476e600a54cd12b4906f lib/Config/Apple/Profile/Payload/Common.pm
+SHA1 ae11d0a85f6053e0ed581d71c5b0af143ba27a1c lib/Config/Apple/Profile/Payload/Email.pm
+SHA1 6f9c05ab282a1715913363eb4766e23e2e279796 lib/Config/Apple/Profile/Payload/Font.pm
+SHA1 135c763710ba80a39cd5e3e7dc194dffae581c09 lib/Config/Apple/Profile/Payload/Tie/Array.pm
+SHA1 41d48ca51ba0a477d90a7281799754d1817f538b lib/Config/Apple/Profile/Payload/Tie/Dict.pm
+SHA1 c6fc9b4737939c2709402d68c9dd94d73204b57c lib/Config/Apple/Profile/Payload/Tie/Root.pm
+SHA1 b774f1402d3b1cc53e0588f149fa78cb55d92e84 lib/Config/Apple/Profile/Payload/Types.pm
+SHA1 63d5987a892247cea6418ecb538f5dc3e3281ef7 lib/Config/Apple/Profile/Payload/Types/Serialize.pm
+SHA1 8308b7cac976d395805140f3cc322f18a8a0ffa9 lib/Config/Apple/Profile/Payload/Types/Validation.pm
+SHA1 bf5fe00a63b0751809569f29407ca00ac457a234 lib/Config/Apple/Profile/Payload/WiFi.pm
+SHA1 002dd374a7a8aa5bb7bd305faff0e4ecc6ff6a67 lib/Config/Apple/Profile/Payload/WiFi/EAPClientConfiguration.pm
+SHA1 fb883c2facd7c4aa21fe73b7723e0436905c1fe9 lib/Config/Apple/Profile/Targets.pm
+SHA1 e1be2923b3dc604c9cec480b5de79837efeca56f t/00-manifest.t
+SHA1 84495b0c2aa9960592501cd806fc1ee04eb1016a t/01-load.t
+SHA1 9cbc33748af4b8215f54d0e63aebfe2094ffb7df t/08-pod.t
+SHA1 67c7fde2e739135369c742790c67dc31615b3d4d t/09-pod-coverage.t
+SHA1 9d5c098dab8032bb7abd05d7b441288f5a3f617c t/10-string.t
+SHA1 4bf458c1539f6e45eaa8a20fbbea81d9748394fa t/11-number.t
+SHA1 3a21e54c4b4c5ef79d1281f7f58148cc0c3cce3c t/12-data.t
+SHA1 14a67063a3f0f05c7fc1d0d2e1562239cfbeb1f7 t/13-real.t
+SHA1 ddcc6aa6181633828ad70c78195ac13da2e3ab18 t/14-dict.t
+SHA1 1ab8218cdf588d938b2b9c8c70da18c2e6adfb29 t/15-array.t
+SHA1 539774323f813e3c28924944aff1cab8ae1102cd t/16-date.t
+SHA1 8441e0c82741170d50b623cf9fec9ecd7ff15c7a t/17-uuid.t
+SHA1 85e17ecc8e535c3e3c2ae05201930a1977485462 t/20-common.t
+SHA1 aa890226f998ab69e6422585cb12139bb3ecceb7 t/35-Certificate.t
+SHA1 a7ce5e3c7623cd0cc452547ecb06b77cc79357df t/37-Email.t
+SHA1 9a24fd5eb1214baf0229d87e133b276ab9f82721 t/43-Font.t
+SHA1 e1ba142a59ca77e7630527597af89f672e329be3 t/65-WiFi.t
+SHA1 440a2a565a93f796a1bc7ed25c9ff68f2821b057 t/66-WiFi-EAP.t
+SHA1 e21a98b7b9072ddd8d754778c310414a72adc98b t/files/Acknowledgement.otf
+SHA1 e1e184ab51f7349168df73cbb464c12dec100e80 t/files/Acknowledgement.ttf
+SHA1 9532b04ad783e3dd81b9282d617a0c9230690bd4 t/files/certificate.der
+SHA1 108325a031c23adcd14da96e11496bfb786c8637 t/files/certificate.pem
+SHA1 e8a317e1814245f36f1eca9f8b4ddfd8b4ad8bfe t/files/identity-empty-password.p12
+SHA1 3dea3914f3e22f87d9b2f680955ee00ff9ce2320 t/files/identity-password-123456.p12
+SHA1 82ba31efb2cbc92465912606f6c89cc50ac957ad t/files/key.key
 -----BEGIN PGP SIGNATURE-----
 
-iD8DBQFUGJbUKktx/CQzhy4RAs0OAKCYSDl4s4cO3hfnPoT8++HrwGze5QCeLcHa
-/s3UMH7KlG/NB8NYqs9mS+Q=
-=A5pG
+iD8DBQFUNiQNKktx/CQzhy4RAoVVAKDSRosQ0/f+oKsLt/b1anLULHMvSwCfRlXp
+wC6CQyQnbDliaPca0hJpZM0=
+=/cCQ
 -----END PGP SIGNATURE-----

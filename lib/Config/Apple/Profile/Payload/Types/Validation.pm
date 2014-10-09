@@ -1,10 +1,10 @@
 package Config::Apple::Profile::Payload::Types::Validation;
 
-use 5.14.4;
+use 5.10.1;
 use strict;
 use warnings FATAL => 'all';
 
-our $VERSION = '0.55';
+our $VERSION = '0.87';
 
 use DateTime;
 use DateTime::Format::Flexible;
@@ -30,6 +30,7 @@ use Exporter::Easy (
         )],
     ],
 );
+use Fcntl qw(F_GETFL O_RDONLY O_RDWR :seek);
 use Regexp::Common;
 use Scalar::Util qw(openhandle blessed);
 use Try::Tiny;
@@ -105,7 +106,7 @@ sub validate {
     
     # We recognize Date types
     elsif ($type == $ProfileDate) {
-        return validate_date ($value);
+        return validate_date($value);
     }
     
     # We recognize Identifier types
@@ -277,19 +278,20 @@ sub validate_date {
         return undef unless $value->is_finite;
         ##use critic
         
-        return $value
+        return $value;
     }
     
     # At this point, we have a scalar, so let's see if it can be parsed
     try {
         $value = DateTime::Format::Flexible->parse_datetime($value);
-        return $value;
     }
+    # If the parse fails, it dies, so return undef
+    catch {
+        $value = undef;
+    };
     
-    # I give up!
-    ## no critic (ProhibitExplicitReturnUndef)
-    return undef;
-    ##use critic
+    # Return either our object, or undef
+    return $value;
 }
 
 
@@ -302,11 +304,12 @@ sub validate_date {
     my $handle = validate_data($bytes);
 
 If passed an already-open file handle, or any object that represents a file
-(such as an C<IO::> object), will return what was passed.
+(such as an C<IO::> object), the handle (without the object tie) will be
+returned.
 
 If passed a scalar, it will be checked to make sure it is not empty, and that
 is not a utf8 string.  The contents of the string will be placed into an
-in-memory file, and an IO::File object will be returned.
+anonymous in-memory file, and the filehandle will be returned.
 
 =cut
 
@@ -316,7 +319,34 @@ sub validate_data {
     # How we act here depends if we have a string or a filehandle
     # Let's first check if we were given an open filehandle
     if (openhandle($value)) {
-        # We've got an open file, so we're good!
+        # First, get just the plain filehandle
+        my $value = openhandle($value);
+        
+        # Check if the file is open for reading
+        # I would like to use the solution from
+        # <http://stackoverflow.com/questions/672214>, but that doesn't work on
+        # all filehandles, unfortunately.
+        # We'll have to do it the hard way.
+        
+        #my $modes = fcntl($value, F_GETFL, 0);
+        #my $mask = 2**O_RDONLY + 2**O_RDWR;
+        #unless (($modes & $mask) > 0) {
+        #    die "Filehandle is not open for reading.";
+        #}
+        my $ignore;
+        my $count ;
+        try {
+            $count = read $value, $ignore, 1;
+        };
+        unless (defined $count) {
+            die "Unable to read from filehandle.  Is it open for reading?";
+        }
+        
+        # If we can't seek, we're probably dealing with something bad
+        unless (seek $value, -1, SEEK_CUR) {
+            die "Unable to seek with filehandle.  Is it pointing to a file?";
+        }
+        
         return $value;
     }
     
@@ -326,19 +356,18 @@ sub validate_data {
         if (   (!utf8::is_utf8($value))
             && (length($value) > 0)
         ) {
-            # Pull the string into an in-memory file, and return that.
-            my ($memory, $file);
-            $file = IO::File::new(\$memory, 'w+');
-            binmode($file);
-            $file->print($value);
-            $file->seek(0, 0);
+            # Pull the string into an anonymous in-memory file, and return that.
+            open(my $file, '+>', undef);
+            binmode $file;
+            print $file $value;
+            seek $file, 0, 0;
             return $file;
         }
     }
     
     # If we're here, then we are dealing with something unknown to us.
     ## no critic (ProhibitExplicitReturnUndef)
-    return undef if ref($value);
+    return undef;
     ##use critic
 }
 
